@@ -1,0 +1,19 @@
+.red {
+    background-color: rgb(206, 126, 126);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#number2 {
+    color: rgb(41, 55, 255);
+    font-size: 36px;
+}
+
+.number3 {
+    font-size: 24px;
+}
+
+#number4 {
+    background-color: rgb(57, 250, 138);
+    font-size: 24px;
+    font-weight: bold;
+}
