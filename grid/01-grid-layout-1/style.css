@@ -9,6 +9,9 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-gap: 15px;
+  /* grid-area: 'header header header header'; */
 }
 
 .container div {
@@ -18,26 +21,41 @@ html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+  grid-template-columns: 25px 25px 25px 25px;
+  grid-template-rows: auto;
+  /* grid-template-areas: 
+  "header header header header"; */
+  
 }
 
 .header {
   background-color: #006157;
+  grid-area: 1/1 / 2/4;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2/4;
+  grid-column: 1/2;
 }
 
 .nav {
   background-color: #642cde;
+  /* grid-row: 2/3;
+  grid-column: 2/3; */
+  grid-area: 2/2/3/4;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-row: 3/4;
+  grid-column: 2/4;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-row: 4/5;
+  grid-column: 1/4;
 }
 
 .article p {
